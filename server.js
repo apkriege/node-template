@@ -11,10 +11,6 @@ app.get("/", function(req, res){ //root dir
     res.sendFile(path.join(__dirname+'/index.html'))
 });
 
-app.get("/transfer", function(req, res){ //root dir
-    res.sendFile(path.join(__dirname+'/apps/transfer.html'))
-});
-
 //TODO add a callback that checks if already listening on that port
 app.listen(port, host, function (){
   console.log('Server running on port:'+port);
